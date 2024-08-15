@@ -87,24 +87,12 @@ gsap.from("#projects h2", {
   },
 });
 
-gsap.from(".projectMin img", {
+gsap.from(".projectMin", {
   opacity: 0,
   x: "-100%",
   duration: 0.6,
   scrollTrigger: {
     trigger: ".projectMin",
-    start: "top 60%",
-    toggleActions: "play none none none",
-  },
-});
-
-gsap.from(".details h3, .details p", {
-  opacity: 0,
-  x: "100%",
-  duration: 0.6,
-  stagger: 0.2,
-  scrollTrigger: {
-    trigger: ".details",
     start: "top 60%",
     toggleActions: "play none none none",
   },
